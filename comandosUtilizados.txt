@@ -1,0 +1,107 @@
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (main)
+$ touch comandos.txt main.js index.html
+
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (main)
+$ git add .
+
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (main)
+$ git commit -m "commit 01 de LeonardoGuzman"
+[main (root-commit) e7f8fa4] commit 01 de LeonardoGuzman
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 comandos.txt
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 249 bytes | 49.00 KiB/s, done.     
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Leo-Guz/20230605-LeonardoGuzman.git
+ * [new branch]      main -> main
+
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (main)
+$ git branch feature01
+
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (main)
+$ git checkout feature01
+Switched to branch 'feature01'
+
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (feature01)
+$ mkdir Terminal Hardware
+
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (feature01)
+$ touch Terminal/resumen.txt Hardware/resumen.txt
+
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (feature01)
+$ git add .
+
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (feature01)
+$ git commit -m "commit 02 de LeonardoGuzman"
+[feature01 a1f5b81] commit 02 de LeonardoGuzman
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 Terminal/resumen.txt
+
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (feature01)
+$ git push origin feature01
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 367 bytes | 122.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'feature01' on GitHub by visiting:
+remote:      https://github.com/Leo-Guz/20230605-LeonardoGuzman/pull/new/feature01
+remote:
+To https://github.com/Leo-Guz/20230605-LeonardoGuzman.git       
+ * [new branch]      feature01 -> feature01
+
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (feature01)
+$ git branch feature02
+
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (feature01)
+$ git checkout feature02
+Switched to branch 'feature02'
+
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (feature02)
+$ git add .
+
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (feature02)
+$ git status
+On branch feature02
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Hardware/resumen.txt
+        modified:   Terminal/resumen.txt
+
+
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (feature02)
+$ git commit -m "commit 03 de LeonardoGuzman"
+[feature02 f65639c] commit 03 de LeonardoGuzman
+ 2 files changed, 8 insertions(+)
+
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (feature02)
+$ git push origin feature02
+Enumerating objects: 11, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 521 bytes | 173.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Leo-Guz/20230605-LeonardoGuzman.git
+   a1f5b81..f65639c  feature02 -> feature02
+
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (feature02)
+$ git checkout main
+Switched to branch 'main'
+
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (main)
+$ mv comandos.txt comandosUtilizados.txt
+
+leona@GWNR71517 MINGW64 ~/Documents/DigitalHouse/Introducción/Examen/20230605-LeonardoGuzman (main)
+$ history
